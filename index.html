@@ -6,6 +6,20 @@
     <title></title>
 </head>
 <body>
+    
+           <script>
+                function change(value){
+                   var v_totalwin=document.getElementById("totalwin").value;
+                   var v_rating=document.getElementById("rating").value;
+                   var v_ecr=document.getElementById("ecr").value;
+                   var v_bonus=document.getElementById("bonus").value;
+                  document.getElementById("basewin").value=v_totalwin/v_ecr*100/(1+v_bonus/100)*1000/v_rating*1000/v_rating*1000/v_rating;
+                  document.getElementById("r0").innerHTML=v_totalwin/v_ecr*100/(1+v_bonus/100)*1000/v_rating*1000/v_rating*1000/v_rating ;
+                }
+          
+       </script>
+ 
+    
     <p>Splinterlands WinPrize calculator</p>
     <table>
         <tbody>
@@ -27,7 +41,7 @@
                             </tr>
                             <tr>
                                 <td>Total Bonuses</td>
-                                <td><input name="bonuses" type="text" value="6"  minlength="0" maxlength="8" size="10"/>%</td>
+                                <td><input name="bonus" type="text" value="6"  minlength="0" maxlength="8" size="10"/>%</td>
                             </tr>
                             <tr>
                                 <td>Base Win</td>
