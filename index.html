@@ -11,6 +11,10 @@
                
                function calc_win(rating)
                {
+                   var v_totalwin=document.getElementById("totalwin").value;
+                   var v_rating=document.getElementById("rating").value;
+                   var v_ecr=document.getElementById("ecr").value;
+                   var v_bonus=document.getElementById("bonus").value;
                    x=v_totalwin/v_ecr*100/(1+v_bonus/100)*rating/v_rating*rating/v_rating*rating/v_rating 
                     return +x.ToFixed(3);
                }
