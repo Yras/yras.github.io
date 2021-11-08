@@ -21,7 +21,7 @@
                    var v_rating=document.getElementById("rating").value;
                    var v_ecr=document.getElementById("ecr").value;
                    var v_bonus=document.getElementById("bonus").value;
-                   x=v_totalwin/v_ecr*100/(1+v_bonus/100)*rating/v_rating*rating/v_rating*rating/v_rating 
+                   x=v_totalwin/v_ecr*100/(1+v_bonus/100)*rating/v_rating*rating/v_rating*rating/v_rating ;
                     return +x.toFixed(3);
                }
                
@@ -55,7 +55,7 @@
         <tbody>
             <tr>
                 <td>
-                    <table style="width: 500px; border="1">
+                    <table style="width: 500px; border="1" align="center">
                         <tbody>
                             <tr>
                                 <td style="width: 228px;">Total win;</td>
@@ -86,7 +86,7 @@
     </table>
     <button type="button" onclick="change(1);"> Calculate </button>
     <p>&nbsp;</p>
-      <table style="width: 500px;align:center;"  text-align='center' border="1">
+      <table style="width: 500px;align:center;"  text-align='center' border="1"  align="center">
                         <tbody>
                             <tr style="background-color:lightgray">
                                 <td>Novice</td>
